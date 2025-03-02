@@ -1,0 +1,43 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.topnav {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: margin-left 0.3s;
+}
+
+.sidenav {
+  position: fixed;
+  top: 100px; /* Adjust based on header height */
+  height: calc(100% - 100px); /* Adjust based on header height */
+  z-index: 999;
+}
+
+.sidebar-expanded .topnav {
+  margin-left: 240px; /* Adjust based on sidebar width */
+}
+
+.sidebar-collapsed .topnav {
+  margin-left: 64px; /* Adjust based on sidebar collapsed width */
+}
