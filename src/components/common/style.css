@@ -1,6 +1,6 @@
 .topnav {
-  background-color: rgb(230, 52, 52);
-  height: 100px; /* Added unit */
+  /* background-color: rgb(230, 52, 52); */
+  height: 100px;
   padding: 13px;
   margin-top: -10px;
   padding-right: 0;
