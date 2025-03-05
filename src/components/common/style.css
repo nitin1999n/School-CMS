@@ -55,7 +55,9 @@
 .custom-accordion .accordion-body {
   background-color: #333 !important; /* Darker background */
   color: red !important; /* Text color */
-}
+} 
+
+
 
 /* Change Accordion Item Border */
 .custom-accordion .accordion-item {
