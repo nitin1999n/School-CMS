@@ -1,17 +1,63 @@
 .topnav {
-  /* background-color: rgb(230, 52, 52); */
+  background-color: #e63434;
   height: 100px;
   padding: 13px;
-  margin-top: -10px;
+  margin-top: 0; /* Adjust margin to ensure header is within the screen */
   padding-right: 0;
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-left: 0; /* Adjust margin to ensure header is within the screen */
+  margin-right: 0; /* Adjust margin to ensure header is within the screen */
   text-align: center;
   font-style: Georgia;
   font-size: 20px;
 }
 
 .topnav .navbar-brand {
+  margin-left: 100px;
+  /* margin-right: auto; */
+}
+
+.sidenav-order-item {
+  padding-left: 40px;
+  color: black; /* Change text color to black */
+}
+
+.navbar-nav {
   margin-left: auto;
-  margin-right: auto;
+}
+
+.accordion-item {
+  background-color: #e63434; /* Apply color to Accordion box */
+}
+
+.accordion-button {
+  background-color: #e63434; /* Apply color to Accordion dropdown */
+  color: white; /* Ensure text is readable */
+}
+
+.accordion-button:not(.collapsed) {
+  color: white; /* Ensure text is readable when expanded */
+}
+
+.accordion-body {
+  background-color: #e63434; /* Apply color to Accordion body */
+  color: white; /* Ensure text is readable */
+}
+
+/* Change Accordion Header Background */
+.custom-accordion .accordion-header {
+  background-color: #ff5733 !important; /* Change to your preferred color */
+  color: red !important; /* Text color */
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Change Accordion Body Background */
+.custom-accordion .accordion-body {
+  background-color: #333 !important; /* Darker background */
+  color: red !important; /* Text color */
+}
+
+/* Change Accordion Item Border */
+.custom-accordion .accordion-item {
+  border: 1px solid #ff5733 !important; /* Border color */
 }

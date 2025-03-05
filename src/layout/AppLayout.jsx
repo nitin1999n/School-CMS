@@ -7,12 +7,15 @@ const AppLayout = () => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
 
   return (
-    <div className={`app-layout ${isSidebarVisible ? 'sidebar-expanded' : 'sidebar-collapsed'}`}>
+    <div className={`app-layout ${isSidebarVisible ? "sidebar-expanded" : "sidebar-collapsed"}`}>
       <HeaderBar />
-      <div className="main-content">
+      <div className="layout-container">
         <SideNavBar onToggle={() => setIsSidebarVisible(!isSidebarVisible)} />
-        <div className="content">
-          {/* Add your main content here */}
+        <div className="main-content">
+          <div className="content">
+            <h2>Dashboard</h2>
+            <p>Welcome to the CMS. This is the main content area.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -20,4 +23,3 @@ const AppLayout = () => {
 };
 
 export default AppLayout;
-

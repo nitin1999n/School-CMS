@@ -25,6 +25,7 @@
   width: 100%;
   z-index: 1000;
   transition: margin-left 0.3s;
+  margin-top: 0; /* Adjust margin to ensure header is within the screen */
 }
 
 .sidenav {
@@ -40,4 +41,87 @@
 
 .sidebar-collapsed .topnav {
   margin-left: 64px; /* Adjust based on sidebar collapsed width */
+}
+
+/* Main Layout */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Fixed Header */
+.topnav {
+  background-color: rgb(230, 52, 52);
+  height: 80px;
+  padding: 10px;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Layout container for Sidebar + Content */
+.layout-container {
+  display: flex;
+  flex-grow: 1;
+  margin-top: 80px; /* Offset for fixed header */
+  height: calc(100vh - 80px);
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background-color: rgb(230, 52, 52);
+  color: white;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+  transition: width 0.3s ease-in-out;
+  padding-top: 10px;
+}
+
+/* Sidebar Expanded */
+.sidebar-expanded .sidebar {
+  width: 250px;
+}
+
+/* Sidebar Collapsed */
+.sidebar-collapsed .sidebar {
+  width: 64px;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  margin-left: 250px; /* Default sidebar width */
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #f8f9fa;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+/* When Sidebar is Collapsed */
+.sidebar-collapsed .main-content {
+  margin-left: 64px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 64px;
+  }
+  .sidebar-expanded .sidebar {
+    width: 64px;
+  }
+  .sidebar-expanded .main-content {
+    margin-left: 64px;
+  }
 }

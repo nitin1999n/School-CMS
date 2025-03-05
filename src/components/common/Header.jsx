@@ -11,16 +11,8 @@ const HeaderBar = ({ onToggle }) => {
         expand="lg"
         bg="dark"
         variant="dark"
-        className="topnav"
       >
-        {/* <Nav className="mr-auto d-flex align-items-center">
-          <NavItem onClick={onToggle}>
-            <NavIcon>
-              <i className="bi bi-list" style={{ fontSize: "1.5em", color: "white", marginRight: "10px" }}></i>
-            </NavIcon>
-          </NavItem>
-        </Nav> */}
-        <Navbar.Brand href="" className="mx-auto">CMS</Navbar.Brand>
+        <Navbar.Brand href="">CMS</Navbar.Brand>
         <Nav className="ml-auto d-flex align-items-center">
           <NavItem>
             <NavIcon>
